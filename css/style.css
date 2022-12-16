@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://csstools.github.io/normalize.css/11.0.0/normalize.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "raleway", sans-serif;
+  background: url("../images/bg-desktop.png"), hsl(229deg, 57%, 11%);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+.fylocon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.fylo {
+  display: flex;
+  align-items: flex-end;
+}
+.fylo__properties {
+  background: hsl(228deg, 56%, 26%);
+  border-radius: 1rem;
+  border-top-right-radius: 5rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 300px;
+  height: 170px;
+  padding: 2rem;
+}
+.fylo__logo {
+  width: 8rem;
+}
+.fylo__icons {
+  display: flex;
+}
+.fylo__doc {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  width: 45px;
+  height: 45px;
+  background: hsl(229deg, 57%, 11%);
+}
+.fylo__doc > img {
+  display: block;
+}
+.fylo__folder {
+  align-self: center;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  width: 45px;
+  height: 45px;
+  background: hsl(229deg, 57%, 11%);
+}
+.fylo__folder > img {
+  display: block;
+}
+.fylo__upload {
+  align-self: center;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  width: 45px;
+  height: 45px;
+  background: hsl(229deg, 57%, 11%);
+}
+.fylo__upload > img {
+  display: block;
+}
+.fylo__bar {
+  position: relative;
+  background: hsl(228deg, 56%, 26%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 450px;
+  height: 150px;
+  border-radius: 1rem;
+}
+.fylo__text {
+  color: hsl(229deg, 7%, 55%);
+}
+.fylo__text > span {
+  color: hsl(243deg, 100%, 93%);
+}
+.fylo__storage {
+  display: flex;
+  color: hsl(243deg, 100%, 93%);
+  justify-content: space-between;
+}
+.fylo__left {
+  position: absolute;
+  color: #000;
+  background: #fff;
+  width: 150px;
+  border-radius: 1rem;
+  height: 50px;
+  top: -30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fylo__left--span {
+  margin-left: 0.5rem;
+  color: hsl(229deg, 7%, 55%);
+  font-size: 0.8rem;
+}
+.fylo__left::after {
+  content: "";
+  z-index: 400;
+  position: absolute;
+  top: 35px;
+  border-left: 30px solid transparent;
+  border-right: transparent;
+  border-top: 30px solid #fff;
+  left: 120px;
+}
+.fylo__left > h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.fylo__ui {
+  position: relative;
+  border-radius: 2rem;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  background: hsl(229deg, 57%, 11%);
+  align-items: center;
+  padding: 0.2rem 0.2rem;
+}
+.fylo__ui--bar {
+  height: 15px;
+  width: 100%;
+  background: hsl(229deg, 57%, 11%);
+  border-radius: 1rem;
+}
+.fylo__ui--bar::-moz-range-thumb {
+  cursor: grab;
+  background: #fff;
+  width: 20px;
+  border-radius: 50%;
+  align-self: center;
+  height: 20px;
+  border: none;
+}
+.fylo__ui--bar::-moz-range-progress {
+  background: linear-gradient(to right, hsl(6deg, 100%, 80%), hsl(335deg, 100%, 65%));
+  height: 15px;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 790px) {
+  body {
+    background: url("../images/bg-mobile.png"), hsl(229deg, 57%, 11%);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+  }
+  .fylo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fylo__properties {
+    width: 350px;
+    margin: auto;
+  }
+  .fylo__bar {
+    margin-top: 2rem;
+    width: 350px;
+  }
+  .fylo__left {
+    height: 50px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .fylo__left::after {
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+  }
+}
+.flag {
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #2e2e2e;
+  width: 120px;
+  height: 50px;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+.flag:hover {
+  width: 400px;
+  color: transparent;
+}
+.flag:hover .attribution {
+  width: 400px;
+  opacity: 1;
+}
+
+.attribution {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 0;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+.attribution a {
+  color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+  .flag {
+    right: 0;
+    border-top-left-radius: 1rem;
+  }
+  .flag:hover {
+    width: 310px;
+  }
+  .flag:hover .attribution {
+    width: 310px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

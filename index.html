@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <section class="fylocon">
+    <article class="fylo">
+
+      <div class="fylo__properties">
+        <img src="./images/logo.svg" alt="" class="fylo__logo">
+        <div class="fylo__icons">
+          <div class="fylo__doc"><img src="./images/icon-document.svg" alt=""></div>
+          <div class="fylo__folder"><img src="./images/icon-folder.svg" alt=""></div>
+          <div class="fylo__upload"><img src="./images/icon-upload.svg" alt=""></div>
+        </div>
+      </div>
+
+      <div class="fylo__bar">
+        <p class="fylo__text">You’ve used <span></span> of your storage</p>
+        <div class="fylo__ui">
+          <div class="fylo__ui--background"></div>
+          <input id="bar" value="815" max="1000" min="0" type="range" class="fylo__ui--bar"/>
+        </div>
+        <div class="fylo__storage">
+          <h4 class="fylo__none">0 GB</h4>
+          <h4 class="fylo__full">1000 GB</h4>
+        </div>
+        <div class="fylo__left">
+          <h2>185 </h2><span class="fylo__left--span">GB LEFT</span>
+        </div>
+      </div>
+
+
+    </article>
+  </section>
+
+  <div class="flag">
+    Attribution
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n" target="_blank">Frontend Mentor</a> <br>
+      Coded by <a href="https://Andr3sC0des.github.io" target="_blank">Andr3sC0des</a>.
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
